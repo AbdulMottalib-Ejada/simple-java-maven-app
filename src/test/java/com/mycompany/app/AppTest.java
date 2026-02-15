@@ -40,6 +40,17 @@ public class AppTest
         }
     }
 
+    @Test
+    public void testArithmetic()
+    {
+        try {
+            assertEquals(1+1,2);
+        }
+        catch (Exception e) {
+            fail("Bad Arithmetic");
+        }
+    }
+
     @After
     public void cleanUpStreams() {
         System.setOut(null);
