@@ -50,6 +50,17 @@ public class AppTest
             fail("Bad Arithmetic");
         }
     }
+    
+    @Test
+    public void testArithmetic2()
+    {
+        try {
+            assertEquals(1+2,3);
+        }
+        catch (Exception e) {
+            fail("Bad Arithmetic");
+        }
+    }
 
     @After
     public void cleanUpStreams() {
